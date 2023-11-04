@@ -7,3 +7,7 @@ declare interface AnimalEncapsule extends AnimalInterface {
     getName(): string;
     setName(name: string): string;
 }
+
+declare interface MammalInterface extends AnimalInterface {
+    birth(name: string, validFood: string[]): MammalInterface;
+}
