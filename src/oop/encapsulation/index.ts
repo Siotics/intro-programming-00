@@ -6,3 +6,4 @@ console.log(monkey.move(5));
 console.log(monkey.eat(["bananas"]));
 console.log(monkey.getName());
 console.log(monkey.setName("Humans"));
+console.log(monkey.getName());

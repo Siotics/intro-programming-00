@@ -10,4 +10,5 @@ declare interface AnimalEncapsule extends AnimalInterface {
 
 declare interface MammalInterface extends AnimalInterface {
     birth(name: string, validFood: string[]): MammalInterface;
+    getParents(): string | string[];
 }

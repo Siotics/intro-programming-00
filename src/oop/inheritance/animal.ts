@@ -1,4 +1,4 @@
-export default class Animal implements AnimalInterface {
+export default class Animal implements AnimalEncapsule {
     private name: string;
     private food: string[];
 
@@ -26,5 +26,14 @@ export default class Animal implements AnimalInterface {
             }
         }
         return foodProcess;
+    }
+
+    getName(): string {
+        return this.name;
+    }
+
+    setName(name: string): string {
+        this.name = name;
+        return `This animal name is now ${this.name}`;
     }
 }
